@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React,{useState} from "react";
+import Navbar from "./Navbar";
+import Header from "./Header";
+import Section from "./Section";
+import Footer from "./Footer";
+import "bootstrap/dist/css/bootstrap.css";
+export default function App() {
+  const [cartCount, setCartCount] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar cartCount={cartCount} setCartCount={setCartCount} />
+      <Header cartCount={cartCount} />
+      <Section cartCount={cartCount} setCartCount={setCartCount} />
+      <Footer />
     </div>
   );
 }
-
-export default App;
