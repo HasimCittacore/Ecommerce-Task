@@ -19,7 +19,7 @@ export default function AddCart({ cartCount, setCartCount, text }) {
             size="small"
             type="button"
             className={
-              add ? "btn btn-secondary btn-lg " : "btn btn-secondary btn-lg "
+              add ? "btn btn-secondary text-dark btn-lg " : "btn btn-secondary text-dark btn-lg "
             }
 //  onclick the button the cart gets added to 1 and in another click it will get removed and also negating the add state value
 // if adding show remove from cart else show add from cart. 
@@ -36,7 +36,7 @@ export default function AddCart({ cartCount, setCartCount, text }) {
             variant="outlined"
             size="small"
             type="button"
-            className="btn btn-secondary btn-lg"
+            className="btn btn-secondary text-dark btn-lg"
           >
             
             View Options

@@ -39,8 +39,8 @@ export default function CardItem({ cartCount, setCartCount }) {
     {
       src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
       title: "Popular Item",
-      price1: "40.00",
-      price2: "0",
+      price1: "0",
+      price2: "40.00",
       text: "Add to cart",
       strike: false,
       star: true,
@@ -79,8 +79,8 @@ export default function CardItem({ cartCount, setCartCount }) {
     {
       src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
       title: "Popular Item",
-      price1: "40.00",
-      price2: "0",
+      price1: "0",
+      price2: "40.00",
       text: "Add to cart",
       strike: false,
       star: true,
