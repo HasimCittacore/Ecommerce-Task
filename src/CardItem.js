@@ -13,7 +13,7 @@ export default function CardItem({ cartCount, setCartCount }) {
       price2: "80.00",
       text: "View Options",
       strike: false,
-      star: false,
+      star: 2,
       sale: false,
     },
     {
@@ -33,7 +33,7 @@ export default function CardItem({ cartCount, setCartCount }) {
       price2: "25.00",
       text: "Add to cart",
       strike: true,
-      star: false,
+      star: 3,
       sale: true,
     },
     {
@@ -43,7 +43,7 @@ export default function CardItem({ cartCount, setCartCount }) {
       price2: "40.00",
       text: "Add to cart",
       strike: false,
-      star: true,
+      star: 4,
       sale: false,
     },
     {
@@ -53,7 +53,7 @@ export default function CardItem({ cartCount, setCartCount }) {
       price2: "25.00",
       text: "Add to cart",
       strike: false,
-      star: false,
+      star: 5,
       sale: true,
     },
     {
@@ -63,7 +63,7 @@ export default function CardItem({ cartCount, setCartCount }) {
       price2: "280.00",
       text: "View Options",
       strike: false,
-      star: false,
+      star: 1,
       sale: false,
     },
     {
@@ -73,7 +73,7 @@ export default function CardItem({ cartCount, setCartCount }) {
       price2: "18.00",
       text: "Add to cart",
       strike: true,
-      star: true,
+      star: false,
       sale: true,
     },
     {
@@ -83,7 +83,7 @@ export default function CardItem({ cartCount, setCartCount }) {
       price2: "40.00",
       text: "Add to cart",
       strike: false,
-      star: true,
+      star: 3,
       sale: false,
     },
   ];

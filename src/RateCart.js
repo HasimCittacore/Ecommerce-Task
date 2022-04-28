@@ -13,7 +13,7 @@ export default function RateCart({ stars }) {
             alignItems: "center",
           }}
         >
-          <Rating defaultValue={2} name={stars} size="small" />
+          <Rating defaultValue={stars} name={stars} size="small" />
         </div>
       ) : (
         <></>
