@@ -1,8 +1,9 @@
 import { CartFill } from "react-bootstrap-icons";
 import "bootstrap/js/dist/dropdown";
 import "./Navbar.css";
-import {Nav,NavDropdown} from 'react-bootstrap';
+import { Nav, NavDropdown } from "react-bootstrap";
 
+// Receiving the props from App to display the cart count
 export default function Navbar(props) {
   return (
     <>
@@ -36,20 +37,24 @@ export default function Navbar(props) {
                 </a>
               </li>
               <li className="nav-item dropdown">
-              <Nav>
-        <NavDropdown
-          id="nav-dropdown-dark-example"
-          title="Shop"
-          menuVariant="light"
-        >
-          <NavDropdown.Item href="#action/3.1">All Products</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.2">Popular Items</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">New Arrivals</NavDropdown.Item>
-          
-          
-        </NavDropdown>
-      </Nav>
+                <Nav>
+                  <NavDropdown
+                    id="nav-dropdown-dark-example"
+                    title="Shop"
+                    menuVariant="light"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      All Products
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.2">
+                      Popular Items
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      New Arrivals
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
               </li>
             </ul>
             <div className="d-flex" style={{ gap: "20px" }}>

@@ -3,92 +3,96 @@ import RateCart from "./RateCart";
 import AddCart from "./Addcart";
 
 export default function CardItem({ cartCount, setCartCount }) {
+
+  // Having a array of product datum to get displayed using map function
   const data = [
     {
-        src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-        title: "Fancy Item",
-        price1: "40.00",
-        price2: "80.00",
-        text:"View Options",
-        strike: false,
-        star:false,
-        sale: false
-      },
-      {
-        src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-        title: "Special Item",
-        price1: "20.00",
-        price2: "18.00",
-        text: "Add to cart",
-        strike: true,
-        star:true,
-        sale: true
-      },
-      {
-        src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-        title: "Sale Item",
-        price1: "50.00",
-        price2: "25.00",
-        text: "Add to cart",
-        strike: true,
-        star:false,
-        sale: true
-      },
-      {
-        src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-        title: "Popular Item",
-        price1: "40.00",
-        price2: "0",
-        text: "Add to cart",
-        strike: false,
-        star:true,
-        sale: false
-      },
-      {
-        src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-        title: "Sale Item",
-        price1: "50.00",
-        price2: "25.00",
-        text: "Add to cart",
-        strike: false,
-        star:false,
-        sale: true
-      },
-      {
-        src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-        title: "Fancy Item",
-        price1: "120.00",
-        price2: "280.00",
-        text:"View Options",
-        strike: false,
-        star:false,
-        sale: false
-      },
-      {
-        src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-        title: "Special Item",
-        price1: "20.00",
-        price2: "18.00",
-        text: "Add to cart",
-        strike: true,
-        star:true,
-        sale: true
-      },
-      {
-        src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-        title: "Popular Item",
-        price1: "0",
-        price2: "40.00",
-        text: "Add to cart",
-        strike: false,
-        star:true,
-        sale: false
-      }
+      src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+      title: "Fancy Item",
+      price1: "40.00",
+      price2: "80.00",
+      text: "View Options",
+      strike: false,
+      star: false,
+      sale: false,
+    },
+    {
+      src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+      title: "Special Item",
+      price1: "20.00",
+      price2: "18.00",
+      text: "Add to cart",
+      strike: true,
+      star: true,
+      sale: true,
+    },
+    {
+      src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+      title: "Sale Item",
+      price1: "50.00",
+      price2: "25.00",
+      text: "Add to cart",
+      strike: true,
+      star: false,
+      sale: true,
+    },
+    {
+      src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+      title: "Popular Item",
+      price1: "40.00",
+      price2: "0",
+      text: "Add to cart",
+      strike: false,
+      star: true,
+      sale: false,
+    },
+    {
+      src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+      title: "Sale Item",
+      price1: "50.00",
+      price2: "25.00",
+      text: "Add to cart",
+      strike: false,
+      star: false,
+      sale: true,
+    },
+    {
+      src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+      title: "Fancy Item",
+      price1: "120.00",
+      price2: "280.00",
+      text: "View Options",
+      strike: false,
+      star: false,
+      sale: false,
+    },
+    {
+      src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+      title: "Special Item",
+      price1: "20.00",
+      price2: "18.00",
+      text: "Add to cart",
+      strike: true,
+      star: true,
+      sale: true,
+    },
+    {
+      src: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+      title: "Popular Item",
+      price1: "40.00",
+      price2: "0",
+      text: "Add to cart",
+      strike: false,
+      star: true,
+      sale: false,
+    },
   ];
 
-//   const [add, setAdd] = useState(false);
+  //   const [add, setAdd] = useState(false);
 
   return (
+    // using map function displaying the datum in the card format.
+    // Used Bootstrap to manage the breakpoints as needed 
     <>
       {data.map((data, index) => {
         return (
@@ -112,7 +116,11 @@ export default function CardItem({ cartCount, setCartCount }) {
               </div>
               <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                 <div className="text-center">
-                  <AddCart text={data.text} cartCount={cartCount} setCartCount={setCartCount} />
+                  <AddCart
+                    text={data.text}
+                    cartCount={cartCount}
+                    setCartCount={setCartCount}
+                  />
                 </div>
               </div>
             </div>
@@ -123,6 +131,7 @@ export default function CardItem({ cartCount, setCartCount }) {
   );
 }
 
+// Using Function to display the item getting sale in the top position using position-absolute
 function saleBox() {
   return (
     <div
